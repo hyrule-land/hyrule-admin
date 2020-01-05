@@ -1,14 +1,15 @@
-export default [{
-  // authority?: string[] | string;
-  // children?: MenuDataItem[];
-  // hideChildrenInMenu?: boolean;
-  // hideInMenu?: boolean;
-  // icon?: string;
-  // locale?: string;
-  name: '菜单一',
-  key: 'ken1',
-  path: '/demo',
-}];
+export default [
+  {
+    name: 'demo',
+    key: 'demo',
+    path: '/demo',
+  },
+  {
+    name: 'example',
+    key: 'example',
+    path: '/example',
+  },
+];
 
 // authority?: string[] | string;
 // children?: MenuDataItem[];

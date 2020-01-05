@@ -3,7 +3,6 @@ import ProLayout, {
   PageHeaderWrapper,
 } from '@ant-design/pro-layout';
 import Link from 'umi/link';
-import { Badge, Row } from 'antd';
 import mockMenuData from './mockMenuData';
 import { getMenuData } from '@ant-design/pro-layout';
 import routes from '../../config/routes/';
@@ -18,9 +17,9 @@ console.log(routerMenuData);
 
 const BasicLayout = props => {
   // 模拟加载来自服务端的菜单
-  const [menuData, setMenuData] = useState(mockMenuData);
+  const [menuData] = useState(mockMenuData);
   // const [menuData, setMenuData] = useState(routerMenuData);
-  const [loading, setLoading]= useState(false);
+  const [loading]= useState(false);
   const { children } = props;
 
   return (
@@ -28,7 +27,7 @@ const BasicLayout = props => {
       menuDataRender={() => menuData}
       title="hyrule admin"
       loading={loading}
-      siderWidth="220"
+      siderWidth={220}
       menuItemRender={(menuItemProps, defaultDom) => {
         if (menuItemProps.isUrl || menuItemProps.children || !menuItemProps.path) {
           return defaultDom;
