@@ -7,7 +7,7 @@ export default [{
   // locale?: string;
   name: '菜单一',
   key: 'ken1',
-  path: '/welcome',
+  path: '/demo',
 }];
 
 // authority?: string[] | string;
